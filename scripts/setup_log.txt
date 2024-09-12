@@ -1,0 +1,42 @@
+Starting fresh lo1g. 
+##### [1] create work dir 
+done and go on 
+_ 
+#######[2. download or update depot_tools]############### 
+done and go on set depot_tools environment PATH variable 
+_ 
+#######[3. set depot_tools environment PATH variable] 
+Checking if the new paths are included in the PATH environment variable... 
+Updated system Path: D:\repo\chromium-win64\depot_tools;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\Git;C:\Program Files\Git\bin;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Windows Kits\10\Windows Performance Toolkit\;C:\Program Files\ninja-win;C:\Program Files\dotnet\;C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\bin\Hostx64\x64;C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE;C:\Users\Fox\scoop\shims;C:\Users\Fox\AppData\Local\Programs\Python\Launcher\;C:\Users\Fox\AppData\Local\Microsoft\WindowsApps;C:\Users\Fox\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Fox\.dotnet\tools 
+gclient is found in PATH. The update was successful. 
+done and go on set global variable for download chromium 
+_ 
+#######[4. set global variable for download chromium]############### 
+done and go on create .gclient 
+_ 
+#######[5. create .gclient, and fillin chromium git info]############### 
+.gclient file already exists. 
+done and go on download chromium code 
+_ 
+#######[6. download chromium code]############### 
+Syncing using gclient... 
+Sync successfully. 
+done and go on 
+#######[7. read version number as: ]############### 
+FILE_PATH=D:\repo\chom\chromium\version_number.txt 
+Version number read from file: 127.0.6533.120. 
+The version number is: 127.0.6533.120 
+done and go on checkout to 127.0.6533.120 
+_ 
+#######[8. checkout to 127.0.6533.120]############### 
+git reset --hard 
+git -c fetch origin 127.0.6533.120 --tags --progress 
+git checkout -b 127.0.6533.120 
+git checkout 127.0.6533.120 
+gclient sync --with_branch_heads -f -R -Dc 
+gclient sync finished. 
+#######[11. copy arg.gn]############### 
+OUT_SOURCE_DIR:D:\repo\chom\config\out 
+OUT_TARGET_DIR:D:\repo\chom\chromium\src\out 
+copy finished finished. 
+ECHO is off.
